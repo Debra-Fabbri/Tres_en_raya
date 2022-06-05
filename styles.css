@@ -8,6 +8,12 @@ body{
     background: #FED18C;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1{
     color: #3D405B;
     text-align: center;
@@ -28,9 +34,23 @@ h1{
     margin: auto;
 }
 
-.NuevaPartida{
+#nuevoContador{
     border-radius: 10px;
     width: 150px;
-    margin: auto;
+    margin-top: 30px;
     cursor: pointer;
+}
+
+#nuevoContador:hover{
+    background-color: #FC5130;
+}
+
+@media (max-width: 426px){
+    .container{
+        width: 300px;
+    }
+    .tablero{
+        width: 100px;
+        height: 100px;
+    }
 }
